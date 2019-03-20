@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import App from './components/App';
-import reducers from './reducers';
+import combinedReducers from './reducers';
 
 /**
  * A middleware like redux-thunk should be used to solve the following
@@ -18,7 +18,7 @@ import reducers from './reducers';
  * the API call response hasn't been received 
  */
 
-const store = createStore(reducers, applyMiddleware(thunk));
+const store = createStore(combinedReducers, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>

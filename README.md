@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Summary
+<ul>
+  <li>Use of redux-thunk middleware to dispatch API calls from action creators</li>
+  <li>
+    Action creations calling other action creators to avoid unnecessary API calls.
+  </li>
+</ul>
 ## Available Scripts
 
 In the project directory, you can run:
